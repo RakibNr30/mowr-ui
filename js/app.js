@@ -27,3 +27,12 @@ $(document).ready(function () {
     $('.file-input-label[data-target="' + targetId + '"]').empty().text(fileName).append(innerInput);
   });
 });
+
+/* Menu Activeness */
+$(document).ready(function () {
+  if ($('.nav-inner .nav-item').hasClass('active')) {
+    $('.nav-item.active').parent('.nav-inner').addClass('show');
+    $('.nav-item.active').parent('.nav-inner').prev('.nav-link').removeClass('collapsed');
+    $('.nav-item.active').parent('.nav-inner').prev('.nav-link').attr('aria-expanded', 'true');
+  }
+});
