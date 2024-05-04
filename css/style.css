@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&display=swap');
+
+body {
+  font-size: .875rem;
+  font-family: 'Noto Sans Bengali UI', serif;
+}
+
+.feather {
+  width: 14px;
+  height: 14px;
+  vertical-align: text-bottom;
+}
+
+.form-select {
+  color: #6c757d;
+}
+.input-note {
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+  color: #495057;
+  margin-top: 0.25rem;
+}
+.horizontal-divider {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #21252940;
+  margin: 1.5rem 0;
+}
+/*
+ * Navbar
+ */
+
+header.navbar {
+  background-color: #e7f1ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  height: 72px;
+}
+header.navbar .navbar-brand {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  white-space: normal;
+  padding: 0;
+  gap: 12px;
+  font-size: 20px;
+  color: #0A58CA;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+}
+header.navbar .navbar-brand .logo {
+  width: 48px;
+  height: 48px;
+}
+header.navbar .navbar-profile {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 8px 4px 4px;
+  gap: 8px;
+  background: rgba(215, 215, 215, 0.25);
+  border: 1px solid #FFFFFF;
+  border-radius: 6px;
+}
+header.navbar .navbar-profile .photo {
+  height: 48px;
+  width: 48px;
+  border-radius: 2px;
+}
+header.navbar .navbar-profile .identity {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 139px;
+  height: 29px;
+}
+header.navbar .navbar-profile .identity .name {
+  width: 96px;
+  height: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #212529;
+}
+header.navbar .navbar-profile .identity .designation {
+  width: 139px;
+  height: 9px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #495057;
+}
+
+header.navbar .navbar-toggler {
+  padding: .25rem 0.45rem;
+  color: #0A58CA;
+  font-size: unset;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid #0A58CA;
+  border-radius: .25rem;
+  transition: box-shadow .15s ease-in-out;
+}
+
+/* ======================================= */
+
+/*
+ * Sidebar
+ */
+
+nav.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 72px 0 0;
+  background-color: #e7f1ff;
+}
+
+nav.sidebar ul.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0 auto;
+}
+nav.sidebar ul.nav li.nav-item {
+  width: 100%;
+}
+nav.sidebar ul.nav li.nav-item a.nav-link {
+  display: flex;
+  height: 40px;
+  font-size: 16px;
+  gap: 0.5rem;
+  align-items: center;
+  width: 100%;
+}
+nav.sidebar ul.nav li.nav-item a.nav-link p {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+  margin: 0;
+}
+nav.sidebar ul.nav li.nav-item a.nav-link.button {
+  display: flex;
+  justify-content: space-between;
+}
+nav.sidebar ul.nav li.nav-item a.nav-link.button::after {
+  width: 1.25em;
+  text-align: right;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%230d6efd' stroke-linecap='round' stroke-linejoin='round' stroke-width='1' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform .35s ease;
+  transform-origin: .5em 50%;
+}
+
+nav.sidebar ul.nav li.nav-item a.nav-link.button[aria-expanded="true"]::after {
+  transform: rotate(90deg)
+}
+
+nav.sidebar ul.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+nav.sidebar ul.nav-inner {
+  list-style-type: none;
+}
+
+@media (max-width: 767.98px) {
+  header.navbar .navbar-profile {
+    display: none;
+  }
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* ====================================== */
+main .content {
+  background: #ffffff;
+}
+main .content h1.page-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #0A58CA;
+  text-align: center;
+}
+main .content .form-card {
+  background: #F4F8FF;
+  border: 1px solid #9EC5FE;
+  max-width: 1200px;
+  margin: auto;
+}
+main .content .form-card .form-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #6C757D;
+}
+main .content form label {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+/*nav.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+nav.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #727272;
+}
+
+nav.sidebar .nav-link.active {
+  color: #2470dc;
+}
+
+nav.sidebar .nav-link:hover .feather,
+nav.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}*/

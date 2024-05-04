@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Meeting Management</title>
+  <meta name="description" content="">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/vendor/bootstrap.min.css"/>
+  <link href="/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="mowr">
+  <header class="navbar sticky-top flex-md-nowrap">
+    <a class="navbar-brand col-md-3 col-lg-2 me-0" href="#">
+      <img src="icon.svg" class="logo" alt="Logo"> Smart Meeting Management
+    </a>
+
+    <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span data-feather="menu"></span>
+    </button>
+
+    <div class="navbar-profile">
+      <img src="img/profile.png" class="photo" alt="Photo">
+      <div class="identity">
+        <span class="name">আব্দুল্লাহ ভুইয়া</span>
+        <span class="designation">এডমিনিস্ট্রেটিভ অফিসার</span>
+      </div>
+    </div>
+  </header>
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+        <div class="position-sticky pt-3">
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                <p>
+                  <span data-feather="user"></span> ইউজার ম্যানেজমেন্ট
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <p>
+                  <span data-feather="box"></span> প্রোজেক্ট ম্যানেজমেন্ট
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link button d-inline-flex align-items-center collapsed" data-bs-toggle="collapse"
+                 aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">
+                <p>
+                  <span data-feather="clipboard"></span> মিটিং ম্যানেজমেন্ট
+                </p>
+              </a>
+              <ul class="nav-inner collapse" id="contents-collapse" style="">
+                <li class="nav-item"><a class="nav-link d-inline-flex align-items-center rounded" href="#">নতুন মিটিং
+                  তৈরি</a></li>
+                <li class="nav-item"><a class="nav-link d-inline-flex align-items-center rounded" href="#">একটিভ মিটিং
+                  লিস্ট</a></li>
+                <li class="nav-item"><a class="nav-link d-inline-flex align-items-center rounded" href="#">সম্পন্ন মিটিং
+                  লিস্ট</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <p><span data-feather="grid"></span> মাস্টার ডাটা ম্যানেজমেন্ট</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <p><span data-feather="list"></span> অডিট ট্রেইল</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-5">
+        <div class="content">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="page-title mb-4">নতুন মিটিং তৈরি</h1>
+              <form>
+                <div class="card form-card">
+                  <div class="card-body">
+                    <h5 class="card-title form-title mb-3">মিটিং এর তথ্য</h5>
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <label for="name" class="form-label">নাম</label>
+                        <input type="text" id="name" name="name" class="form-control" placeholder="মিটিং এর নাম লিখুন"
+                               required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label class="form-label">টাইপ <span style="color: red;"> *</span></label><br>
+                        <div class="form-check form-check-inline">
+                          <input type="radio" id="type1" name="type" class="form-check-input" value="1" checked>
+                          <label class="form-check-label" for="type1">পি এস সি (PSC)</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input type="radio" id="type2" name="type" class="form-check-input" value="1">
+                          <label class="form-check-label" for="type2">পি আই সি (PIC)</label>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="section" class="form-label">সেকশন</label>
+                        <select id="section" name="section" class="form-select" required>
+                          <option selected>সেকশন নির্বাচন করুন</option>
+                          <option value="1">সেকশন ১</option>
+                          <option value="2">সেকশন ২</option>
+                          <option value="3">সেকশন ৩</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="project" class="form-label">প্রজেক্ট</label>
+                        <select id="project" name="project" class="form-select" required>
+                          <option selected>প্রজেক্ট নির্বাচন করুন</option>
+                          <option value="1">প্রজেক্ট ১</option>
+                          <option value="2">প্রজেক্ট ২</option>
+                          <option value="3">প্রজেক্ট ৩</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="row">
+                          <div class="col-md-6 mb-3">
+                            <label for="date" class="form-label">তারিখ</label>
+                            <input type="text" id="date" name="date" class="form-control"
+                                   placeholder="তারিখ নির্বাচন করুন" required>
+                          </div>
+                          <div class="col-md-6 mb-3">
+                            <label for="time" class="form-label">সময়</label>
+                            <input type="text" id="time" name="time" class="form-control"
+                                   placeholder="সময় নির্বাচন করুন" required>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="notice" class="form-label">মিটিং এর নোটিস</label>
+                        <input type="file" id="notice" name="notice" class="form-control file-control"
+                               placeholder="মিটিং এর নোটিস সিলেক্ট করুন" required>
+                        <small class="input-note">সর্বোচ্চ ফাইল সাইজঃ ১৫ এম বি | ফাইলের ধরণঃ PDF</small>
+                      </div>
+                    </div>
+
+                    <span class="horizontal-divider"></span>
+
+                    <h5 class="card-title form-title mb-3">আনুষাঙ্গিক ফাইল</h5>
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <label for="other_file_name" class="form-label">আনুষাঙ্গিক ফাইলের নাম</label>
+                        <input type="text" id="other_file_name" name="other_file_name" class="form-control"
+                               placeholder="আনুষাঙ্গিক ফাইলের নাম লিখুন">
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="other" class="form-label">আনুষাঙ্গিক ফাইল</label>
+                        <input type="file" id="other" name="other" class="form-control file-control"
+                               placeholder="আনুষাঙ্গিক ফাইল সিলেক্ট করুন">
+                        <small class="input-note">সর্বোচ্চ ফাইল সাইজঃ ১৫ এম বি | ফাইলের ধরণঃ PDF</small>
+                      </div>
+                      <div class="col-12">
+                        <button type="button" class="btn btn-sm btn-outline-primary d-flex align-items-center"><span
+                          data-feather="plus" class="me-1"></span> আরেকটি সংযুক্তি যোগ করুন
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card form-card mt-3 mb-5">
+                  <div class="card-body">
+                    <div class="col-12">
+                      <button type="button" class="btn btn-sm btn-primary d-flex align-items-center float-end">
+                        <span data-feather="save" class="me-1"></span> মিটিং তৈরী করুন
+                      </button>
+                      <button type="button" class="btn btn-sm btn-danger d-flex align-items-center float-end me-2">
+                        <span data-feather="x" class="me-1"></span> খারিজ করুন
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</div>
+
+<script src="/js/vendor/bootstrap.bundle.min.js"></script>
+<script src="/js/vendor/feather.min.js"></script>
+<script src="/js/app.js"></script>
+</body>
+</html>
