@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Meeting Management</title>
+  <meta name="description" content="">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/vendor/bootstrap.min.css"/>
+  <link href="/css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="mowr">
+  <header class="navbar sticky-top flex-md-nowrap">
+    <a class="navbar-brand col-md-3 col-lg-2 me-0" href="#">
+      <img src="icon.svg" class="logo" alt="Logo"> Smart Meeting Management
+    </a>
+
+    <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span data-feather="menu"></span>
+    </button>
+
+    <div class="navbar-profile">
+      <img src="img/profile.png" class="photo" alt="Photo">
+      <div class="identity">
+        <span class="name">আব্দুল্লাহ ভুইয়া</span>
+        <span class="designation">এডমিনিস্ট্রেটিভ অফিসার</span>
+      </div>
+    </div>
+  </header>
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+        <div class="position-sticky pt-md-3">
+
+          <div class="sidebar-profile mb-3">
+            <img src="img/profile.png" class="photo" alt="Photo">
+            <div class="identity">
+              <span class="name">আব্দুল্লাহ ভুইয়া</span>
+              <span class="designation">এডমিনিস্ট্রেটিভ অফিসার</span>
+            </div>
+          </div>
+
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">
+                <p>
+                  <span data-feather="user"></span> ইউজার ম্যানেজমেন্ট
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <p>
+                  <span data-feather="box"></span> প্রোজেক্ট ম্যানেজমেন্ট
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link button d-inline-flex align-items-center collapsed" data-bs-toggle="collapse"
+                 aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">
+                <p>
+                  <span data-feather="clipboard"></span> মিটিং ম্যানেজমেন্ট
+                </p>
+              </a>
+              <ul class="nav-inner collapse" id="contents-collapse">
+                <li class="nav-item active"><a class="nav-link d-inline-flex align-items-center rounded" href="#">নতুন মিটিং
+                  তৈরি</a></li>
+                <li class="nav-item"><a class="nav-link d-inline-flex align-items-center rounded" href="#">একটিভ মিটিং
+                  লিস্ট</a></li>
+                <li class="nav-item"><a class="nav-link d-inline-flex align-items-center rounded" href="#">সম্পন্ন মিটিং
+                  লিস্ট</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <p><span data-feather="grid"></span> মাস্টার ডাটা ম্যানেজমেন্ট</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <p><span data-feather="list"></span> অডিট ট্রেইল</p>
+              </a>
+            </li>
+          </ul>
+          <footer class="dsilogo">
+            <img src = "/img/Sidebar Footer.svg" alt = "dsilogo">
+          </footer>
+            
+        </div>
+      </nav>
+
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-4 mt-md-5">
+        <div class="view-meeting-title">
+            <h3>প্রদর্শিত হচ্ছে</h3>
+            <h4>মাসিক পি আই সি মিটিং - সেপ্টেম্বর</h4>
+        </div>
+        <div class="viewmeetingcontent">
+            <div class="card left">
+                <h3>মিটিং এর তথ্য</h3>
+                <div class="type-section">
+                    <div class="meetingtype">
+                        <h2>মিটিং টাইপ</h2>
+                        <p>পি আই সি (PIC)</p>
+                    </div>
+                    <div class="meetingsection">
+                        <h2>সেকশন</h2>
+                        <p>ঢাকা</p>
+                    </div>
+                </div>
+                <div class="project">
+                    <h2>প্রজেক্ট</h2>
+                    <p>Institutionalization of Integrated Water Resources Management (IWRM) process in Compliance with Bangladesh Water Act,2013</p>
+                </div>
+                <div class="time">
+                    <h2>সময়</h2>
+                    <p>২য় পি এস সি (PSC)সভা | বিকেল ৪-৫, ২৪ ফেব্রুয়ারি ২০২৪</p>
+                </div>
+                
+            </div>
+            <div class="card right">
+                <h3>মিটিং এর সকল সংযুক্তি</h3>
+                <div class="attachment">
+                    <img src="/img/pdf-icon.svg">
+                    <div class="fileinfo">
+                        <p>ফাইলের নোটিস</p>
+                        <p class = "file-name">Meeting 12 Sep 2024 - Notice (2).PDF</p>
+                    </div>
+                    <button type="button" class="btn btn-sm btn-outline-primary d-flex align-items-center">
+                        <span data-feather="eye" class="me-1"></span>
+                        দেখুন
+                      </button>
+                </div>    
+            </div>
+            
+        </div>
+        <div class="viewmeetingbutton">
+            <button type="button" class="btn btn-sm btn-outline-primary d-flex align-items-center">
+                <span data-feather="clipboard" class="me-1"></span>
+                সভার কার্য বিবরণী আপডেট করুন
+              </button>
+        </div>
+        
+        <div class="viewmeetingfooter">
+            <div class="card form-card mt-3 mb-5">
+                <div class="card-body">
+                <div class="col-12">
+                    <button type="button" class="btn btn-sm btn-primary d-flex align-items-center float-end">
+                    <span data-feather="save" class="me-1"></span> মিটিং আপডেট করুন
+                    </button>
+                    <button type="button" class="btn btn-sm btn-danger d-flex align-items-center float-end me-2">
+                    <span data-feather="x" class="me-1"></span> মিটিং বাতিল করুন
+                    </button>
+                </div>
+                </div>
+            </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</div>
+
+<script src="/js/vendor/jquery.min.js"></script>
+<script src="/js/vendor/bootstrap.bundle.min.js"></script>
+<script src="/js/vendor/feather.min.js"></script>
+<script src="/js/app.js"></script>
+
+</body>
+</html>
