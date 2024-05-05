@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&family=Tiro+Bangla:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body {
   font-size: .875rem;
-  font-family: 'Noto Sans Bengali UI', serif;
+  font-family: "Tiro Bangla", serif, sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .feather {
@@ -40,16 +43,16 @@ header.navbar {
   height: 72px;
 }
 header.navbar .navbar-brand {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 600;
   display: flex;
   flex-direction: row;
   align-items: center;
-  white-space: normal;
   padding: 0;
   gap: 12px;
   font-size: 20px;
   color: #0A58CA;
-  font-style: normal;
-  font-weight: 600;
   line-height: 100%;
 }
 header.navbar .navbar-brand .logo {
@@ -77,11 +80,10 @@ header.navbar .navbar-profile .identity {
   flex-direction: column;
   align-items: flex-start;
   gap: 10px;
-  width: 139px;
+  width: 140px;
   height: 29px;
 }
 header.navbar .navbar-profile .identity .name {
-  width: 96px;
   height: 10px;
   font-style: normal;
   font-weight: 400;
@@ -90,15 +92,13 @@ header.navbar .navbar-profile .identity .name {
   color: #212529;
 }
 header.navbar .navbar-profile .identity .designation {
-  width: 139px;
-  height: 9px;
+  height: 10px;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   color: #495057;
 }
-
 header.navbar .navbar-toggler {
   padding: .25rem 0.45rem;
   color: #0A58CA;
@@ -108,6 +108,46 @@ header.navbar .navbar-toggler {
   border: 1px solid #0A58CA;
   border-radius: .25rem;
   transition: box-shadow .15s ease-in-out;
+}
+.sidebar .sidebar-profile {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 8px 4px 4px;
+  gap: 8px;
+  background: rgba(215, 215, 215, 0.25);
+  border-top: 1px solid #FFFFFF;
+  border-bottom: 1px solid #FFFFFF;
+}
+.sidebar .sidebar-profile .photo {
+  height: 48px;
+  width: 48px;
+  border-radius: 2px;
+}
+.sidebar .sidebar-profile .identity {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 140px;
+  height: 29px;
+}
+.sidebar .sidebar-profile .identity .name {
+  height: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #212529;
+}
+.sidebar .sidebar-profile .identity .designation {
+  height: 10px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #495057;
 }
 
 /* ======================================= */
@@ -186,12 +226,6 @@ nav.sidebar ul.nav-inner {
   list-style-type: none;
 }
 
-@media (max-width: 767.98px) {
-  header.navbar .navbar-profile {
-    display: none;
-  }
-}
-
 .sidebar-sticky {
   position: relative;
   top: 0;
@@ -250,3 +284,33 @@ nav.sidebar .nav-link.active .feather {
   font-size: .75rem;
   text-transform: uppercase;
 }*/
+
+@media (max-width: 767.98px) {
+  header.navbar .navbar-profile {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar .sidebar-profile {
+    display: none;
+  }
+}
+
+@media (max-width: 413.98px) {
+  nav.sidebar {
+    padding: 56px 0 0;
+  }
+  header.navbar {
+    padding: 4px 8px;
+    height: 56px;
+  }
+  header.navbar .navbar-brand {
+    gap: 8px;
+    font-size: 16px;
+  }
+  header.navbar .navbar-brand .logo {
+    width: 36px;
+    height: 36px;
+  }
+}
