@@ -36,3 +36,9 @@ $(document).ready(function () {
     $('.nav-item.active').parent('.nav-inner').prev('.nav-link').attr('aria-expanded', 'true');
   }
 });
+
+$('#rte1').summernote({
+  placeholder: 'Hello Bootstrap 5',
+  tabsize: 2,
+  height: 400
+});

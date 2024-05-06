@@ -157,6 +157,7 @@ header.navbar .navbar-toggler {
  */
 
 nav.sidebar {
+  font-family: "Noto Sans Bengali";
   position: fixed;
   top: 0;
   bottom: 0;
@@ -188,7 +189,7 @@ nav.sidebar ul.nav li.nav-item.active a.nav-link {
   color: #000;
 }
 nav.sidebar ul.nav li.nav-item.active {
-  border-right: 3px solid #000;
+  border-right: 3px solid #000;;
 }
 nav.sidebar ul.nav li.nav-item a.nav-link p {
   display: flex;
@@ -235,7 +236,7 @@ nav.sidebar ul.nav-inner {
   overflow-y: auto;
 }
 
-footer {
+.dsilogo {
   position: fixed; 
   bottom: 0; 
   left: 0;
@@ -244,7 +245,7 @@ footer {
   
 }
 
-footer img {
+.dsilogo img {
   display: block;
   margin-bottom: 30px;
   right: 20px;
@@ -280,7 +281,7 @@ main .content form label {
 /* ====================================== */
 .input-group {
   display: flex;
-  gap: 10px; 
+  gap: 0px; 
 }
 
 .input-group input,
@@ -365,6 +366,7 @@ main p{
   justify-content: space-between;
   gap: 32px;
 }
+
 .viewmeetingbutton{
   margin-top: 20px;
   display: flex;
@@ -373,6 +375,7 @@ main p{
   line-height: 30px;
   color: #0D6EFD;
   justify-content: center;
+  padding: 8px, 16px, 8px, 16px;
 }
 
 
@@ -440,6 +443,61 @@ main p{
 }
 /* ====================================== */
 
+
+
+/* ====================================== */
+
+.card1{
+  font-family: "Noto sans Bengali";
+  width: Fill (1,296px)px;
+  height: Hug (487px)px;
+  padding: 24px 24px;
+  gap: 16px;
+  border-radius: 12px;
+  border: 1px 0px 0px 0px;
+  opacity: 0px;
+  background: #F4F8FF;
+  border: 1px solid #9EC5FE;
+  margin-top: 24px;
+}
+
+.card1 h5{
+  font-family: "Noto Sans Bengali";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  color: #6C757D;
+}
+
+.col-md-6{
+  display: block;
+}
+
+.row1{
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+hr {
+  border: 1px dashed #212529;
+  border-style: none none dashed; 
+  color: #fff; 
+  background-color: #fff;
+}
+
+.meetinproceedings{
+  display: block;
+  gap: 40px;
+}
+
+.rte{
+  background-color: #fff;
+}
+
+
+/* ====================================== */
 
 
 /*nav.sidebar .nav-link {
