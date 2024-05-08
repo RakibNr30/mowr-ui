@@ -7,8 +7,10 @@
     gap: 16px;
     align-items: center;
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
 }
+
 
 /*==== active meeting title ====*/
 
@@ -16,19 +18,33 @@
     display: flex;
     justify-content: space-between;
     font-family: "Noto Sans Bengali";
-    width: 100%;
+    width: 80%;
+    margin: 0;
+}
+
+.activemeetingcontent .activemeetingtitle  h1{
+    font-size: 24px;
+    font-weight: 600;
+    color: #0A58CA;
+    text-align: left;
+    margin: 0;
 }
 
 /*==== active meeting table ====*/
 
 .activemeetingcontent .activemeetingtable{
-    width: 100%; 
-    max-width: 1296px;  
+    width: 80%; 
     opacity: 1; 
     color: white;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Noto Sans Bengali";
+    align-items: center;
+    margin: 0;
+    padding: 0;
 }
 
-.table{
+.table-striped{
     border: 1px solid #9EC5FE;
     border-radius: 8px;
     overflow: hidden;
@@ -50,7 +66,7 @@
 }
 
 .table-striped>tbody>tr:nth-child(even)>td{
-    background-color: #F4F8FF;
+    background-color: #F4F8FF !important;
 }
 .table-striped>tbody>tr:nth-child(odd)>td{
     background-color: #ffffff !important;
@@ -97,7 +113,7 @@
     display: flex;
     justify-content: space-between;
     font-family: "Noto Sans Bengali";
-    width: 100%;
+    width: 80%;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -173,3 +189,19 @@ hr {
     margin: 0;
 }
 
+
+  .dsilogo {
+    position: fixed; 
+    bottom: 0; 
+    left: 0;
+    width: 100%; 
+    z-index: 1000; 
+    
+  }
+  
+  .dsilogo img {
+    display: block;
+    margin-bottom: 30px;
+    right: 20px;
+  }
+  
