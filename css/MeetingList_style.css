@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&family=Tiro+Bangla:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.activemeetingcontent{
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+/*==== active meeting title ====*/
+
+.activemeetingcontent .activemeetingtitle{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Noto Sans Bengali";
+    width: 100%;
+}
+
+/*==== active meeting table ====*/
+
+.activemeetingcontent .activemeetingtable{
+    width: 100%; 
+    max-width: 1296px;  
+    opacity: 1; 
+    color: white;
+}
+
+.table{
+    border: 1px solid #9EC5FE;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.activemeetingtable thead{
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    font-style: bold;  
+    line-height: 24px;
+    background: #E9ECEF;
+    padding: 8px, 8px, 9px, 8px;
+    border-bottom: 1px solid #6C757D;
+}
+
+.activemeetingtable tbody{
+    background-color: #ffffff;
+}
+
+.table-striped>tbody>tr:nth-child(even)>td{
+    background-color: #F4F8FF;
+}
+.table-striped>tbody>tr:nth-child(odd)>td{
+    background-color: #ffffff !important;
+    opacity: 100;
+}
+
+.activemeetingtable a{
+    text-decoration: none;
+}
+
+.activemeetingtable td{
+    border: none;
+    font-family: "Noto Sans Bengali";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-decoration-color: #212529;  
+    background-color: #ffffff ;
+    height: 60px;   
+    padding-top: 8px;
+    padding-bottom: 9px;
+    margin-top: 8px;    
+    gap: 0px; 
+    align-items: center;
+}
+
+.table-striped tr:hover {
+    background-color: #f2f2f2; 
+}
+
+.btn-link{
+    text-decoration: none;
+    font-family: "Noto Sans Bengali";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+}
+
+/*==== active meeting below ====*/
+
+.activemeetingcontent .below-table{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Noto Sans Bengali";
+    width: 100%;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.below-table p{
+    font-family: "Noto Sans Bengali";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.page-link.active{
+    background-color: #0D6EFD;
+    color: white;
+}
+.dropdown .btn-secondary {
+    background-color: white; 
+    color: #6C757D; 
+    border-color: #6C757D; 
+    font-size: 16px;
+}
+
+.dropdown-menu {
+    background-color: white; 
+    color: #6C757D; 
+    border: 1px solid #6C757D;
+}
+
+
+.dropdown-menu .dropdown-item {
+    color: #6C757D; 
+}
+
+
+/*
+hr {
+    border: 1px dashed #212529;
+    border-style: none none dashed; 
+    color: #fff; 
+    background-color: #fff;
+}
+  
+.hr-text{
+    font-family: "Noto Sans Bengali";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    text-decoration-color: #6C757D;
+}
+ */ 
+
+.hr-with-text {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.hr-with-text .hr-text {
+    padding: 0 10px; 
+    font-family: "Noto Sans Bengali";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    color: #6C757D;
+    white-space: nowrap; 
+}
+
+.hr-with-text hr {
+    flex-grow: 1;
+    border: 0;
+    border-top: 1px dashed #212529;
+    margin: 0;
+}
+

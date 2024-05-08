@@ -333,6 +333,8 @@ main p{
 }
 
 
+/*======================================*/
+
 .viewmeetingcontent .left{
   align-items: flex-start;
   border-radius: 12px;
@@ -486,6 +488,15 @@ hr {
   color: #fff; 
   background-color: #fff;
 }
+
+.hr-text{
+  font-family: "Noto Sans Bengali";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-decoration-color: #6C757D;
+}
+
 
 .meetinproceedings{
   display: block;
