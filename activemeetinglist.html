@@ -11,7 +11,7 @@
   <meta property="og:image" content="">
   <meta property="og:image:alt" content="">
 
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="icon" href="/img/mowr_logo.svg" type="image/svg+xml">
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="css/vendor/bootstrap.min.css"/>
@@ -22,7 +22,8 @@
 <div class="mowr">
   <header class="navbar sticky-top flex-md-nowrap">
     <a class="navbar-brand col-md-3 col-lg-2 me-0" href="#">
-      <img src="icon.svg" class="logo" alt="Logo"> Smart Meeting Management
+      <img src="/img/mowr_logo.svg" class="logo" alt="Logo">
+      <img src="/img/Text.svg" class = 'logo-text' alt="logo-text">
     </a>
 
     <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse"
@@ -61,11 +62,17 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a href="#"class="nav-link button d-inline-flex align-items-center collapsed" data-bs-toggle="collapse"
+              aria-expanded="false" data-bs-target="#project-contents-collapse" aria-controls="project-contents-collapse">
                 <p>
                   <span data-feather="box"></span> প্রোজেক্ট ম্যানেজমেন্ট
                 </p>
               </a>
+              <ul class="nav-inner collapse" id="project-contents-collapse">
+                <li class="nav-item"><a class="nav-link d-inline-flex align-items-center rounded" href="#">নতুন প্রজেক্ট যোগ</a></li>
+                <li class="nav-item "><a class="nav-link d-inline-flex align-items-center rounded" href="#">চলমান প্রজেক্ট লিস্ট</a></li>
+                <li class="nav-item"><a class="nav-link d-inline-flex align-items-center rounded" href="#">সম্পন্ন প্রজেক্ট লিস্ট</a></li>
+            </ul>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link button d-inline-flex align-items-center collapsed" data-bs-toggle="collapse"
