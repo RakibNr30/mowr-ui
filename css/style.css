@@ -90,6 +90,7 @@ header.navbar .navbar-profile .identity .name {
   font-size: 16px;
   line-height: 150%;
   color: #212529;
+  font-family: "Noto Sans Bengali";
 }
 header.navbar .navbar-profile .identity .designation {
   height: 10px;
@@ -98,6 +99,8 @@ header.navbar .navbar-profile .identity .designation {
   font-size: 14px;
   line-height: 150%;
   color: #495057;
+  font-family: "Noto Sans Bengali";
+
 }
 header.navbar .navbar-toggler {
   padding: .25rem 0.45rem;
@@ -358,43 +361,51 @@ nav.sidebar .nav-link.active .feather {
 .activemeetingcontent .activemeetingtable{
   width: 90%; 
   opacity: 1; 
-  color: white;
   display: flex;
   justify-content: space-between;
   font-family: "Noto Sans Bengali";
   align-items: center;
+  border-radius: 8px;
   margin: 0;
   padding: 0;
 }
 
-.table-striped{
+.activemeetingcontent .activemeetingtable tbody{
+  background-color: #ffffff !important;
   border: 1px solid #9EC5FE;
   border-radius: 8px;
+}
+
+.table-striped{
+  border: 1px solid #9EC5FE;
   overflow: hidden;
 }
 
-.activemeetingtable thead{
+
+.activemeetingcontent .activemeetingtable thead{
   font-family: "Inter", sans-serif;
   font-size: 16px;
   font-weight: 700;
   font-style: bold;  
   line-height: 24px;
-  background: #E9ECEF;
   padding: 8px, 8px, 9px, 8px;
   border-bottom: 1px solid #6C757D;
+  background-color: #E9ECEF !important;
 }
 
-.activemeetingtable tbody{
-  background-color: #ffffff;
-}
 
 .table-striped>tbody>tr:nth-child(even)>td{
   background-color: #F4F8FF !important;
 }
+
 .table-striped>tbody>tr:nth-child(odd)>td{
-  background-color: #ffffff;
-  opacity: 100;
+  background-color: #ffffff !important;
 }
+
+.activemeetingtable th{
+  background-color: #E9ECEF !important;
+}
+
 
 .activemeetingtable a{
   text-decoration: none;
@@ -407,8 +418,8 @@ nav.sidebar .nav-link.active .feather {
   font-weight: 400;
   line-height: 24px;
   text-align: left;
-  text-decoration-color: #212529;  
-  background-color: #ffffff ;
+  color: #212529;  
+  background-color: #ffffff !important;
   height: 60px;   
   padding-top: 8px;
   padding-bottom: 9px;
@@ -445,7 +456,7 @@ nav.sidebar .nav-link.active .feather {
   background-color:  #FFC107;
   padding: 5.25px, 9.75px, 5.25px, 9.75px;
   border-radius: 16px;
-  color: #212529;
+  color: #212529 !important;
   font-family: "Inter", sans-serif;
   font-size: 15px;
   font-weight: 700;
@@ -559,3 +570,36 @@ hr {
 
 
 /*==================================ACTVIE MEETING PAGE ENDS=================================*/
+
+
+
+
+/*==================================ACTVIE PROJECT PAGE STARTS=================================*/
+
+
+.need-approval{
+  background-color: #8540F5;
+  padding: 5.25px, 9.75px, 5.25px, 9.75px;
+  border-radius: 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+}
+
+.project-status{
+  align-items: center;
+  text-align: center !important; 
+  justify-content: space-around;
+}
+
+.meeting-date.not-set{
+  font-family: "Noto Sans Bengali", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: left;
+  color: #6C757D;
+}
+
+/*==================================ACTVIE PROJECT PAGE ENDS=================================*/
