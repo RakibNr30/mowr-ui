@@ -321,3 +321,241 @@ nav.sidebar .nav-link.active .feather {
     height: 36px;
   }
 }
+
+
+/*==================================ACTVIE MEETING PAGE STARTS=================================*/
+.activemeetingcontent{
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+
+/*==== active meeting title ====*/
+
+.activemeetingcontent .activemeetingtitle{
+  display: flex;
+  justify-content: space-between;
+  font-family: "Noto Sans Bengali";
+  width: 90%;
+  margin: 0;
+  
+}
+
+.activemeetingcontent .activemeetingtitle  h1{
+  font-size: 24px;
+  font-weight: 600;
+  color:#0D6EFD;
+  text-align: left;
+  margin: 0;
+}
+
+/*==== active meeting table ====*/
+
+.activemeetingcontent .activemeetingtable{
+  width: 90%; 
+  opacity: 1; 
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Noto Sans Bengali";
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.table-striped{
+  border: 1px solid #9EC5FE;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.activemeetingtable thead{
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: bold;  
+  line-height: 24px;
+  background: #E9ECEF;
+  padding: 8px, 8px, 9px, 8px;
+  border-bottom: 1px solid #6C757D;
+}
+
+.activemeetingtable tbody{
+  background-color: #ffffff;
+}
+
+.table-striped>tbody>tr:nth-child(even)>td{
+  background-color: #F4F8FF !important;
+}
+.table-striped>tbody>tr:nth-child(odd)>td{
+  background-color: #ffffff;
+  opacity: 100;
+}
+
+.activemeetingtable a{
+  text-decoration: none;
+}
+
+.activemeetingtable td{
+  border: none;
+  font-family: "Noto Sans Bengali";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  text-decoration-color: #212529;  
+  background-color: #ffffff ;
+  height: 60px;   
+  padding-top: 8px;
+  padding-bottom: 9px;
+  margin-top: 8px;    
+  gap: 0px; 
+  align-items: center;
+}
+
+.table-striped tr:hover {
+  background-color: #f2f2f2; 
+}
+
+.btn-link{
+  text-decoration: none;
+  font-family: "Noto Sans Bengali";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+}
+
+
+.gone{
+  background-color: #212529;
+  padding: 5.25px, 9.75px, 5.25px, 9.75px;
+  border-radius: 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+}
+
+.upcoming{
+  background-color:  #FFC107;
+  padding: 5.25px, 9.75px, 5.25px, 9.75px;
+  border-radius: 16px;
+  color: #212529;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+}
+
+
+.meeting-status{
+  align-items: center;
+  text-align: center !important; 
+  justify-content: space-around;
+}
+
+/*========== active meeting table below =============*/
+
+.activemeetingcontent .below-table{
+  display: flex;
+  justify-content: space-between;
+  font-family: "Noto Sans Bengali";
+  width: 90%;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.below-table p{
+  font-family: "Noto Sans Bengali";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+}
+.page-link.active{
+  background-color: #0D6EFD;
+  color: white;
+}
+.dropdown .btn-secondary {
+  background-color: white; 
+  color: #6C757D; 
+  border-color: #6C757D; 
+  font-size: 16px;
+}
+
+.dropdown-menu {
+  background-color: white; 
+  color: #6C757D; 
+  border: 1px solid #6C757D;
+}
+
+
+.dropdown-menu .dropdown-item {
+  color: #6C757D; 
+}
+
+
+/*
+hr {
+  border: 1px dashed #212529;
+  border-style: none none dashed; 
+  color: #fff; 
+  background-color: #fff;
+}
+
+.hr-text{
+  font-family: "Noto Sans Bengali";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  text-decoration-color: #6C757D;
+}
+*/ 
+
+.hr-with-text {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.hr-with-text .hr-text {
+  padding: 0 10px; 
+  font-family: "Noto Sans Bengali";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #6C757D;
+  white-space: nowrap; 
+}
+
+.hr-with-text hr {
+  flex-grow: 1;
+  border: 0;
+  border-top: 1px dashed #212529;
+  margin: 0;
+}
+
+
+.dsilogo {
+  position: fixed; 
+  bottom: 0; 
+  left: 0;
+  width: 100%; 
+  z-index: 1000; 
+  
+}
+
+.dsilogo img {
+  display: block;
+  margin-bottom: 30px;
+  right: 20px;
+}
+
+
+/*==================================ACTVIE MEETING PAGE ENDS=================================*/
