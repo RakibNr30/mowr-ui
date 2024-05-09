@@ -18,14 +18,15 @@
     display: flex;
     justify-content: space-between;
     font-family: "Noto Sans Bengali";
-    width: 80%;
+    width: 90%;
     margin: 0;
+    
 }
 
 .activemeetingcontent .activemeetingtitle  h1{
     font-size: 24px;
     font-weight: 600;
-    color: #0A58CA;
+    color:#0D6EFD;
     text-align: left;
     margin: 0;
 }
@@ -33,7 +34,7 @@
 /*==== active meeting table ====*/
 
 .activemeetingcontent .activemeetingtable{
-    width: 80%; 
+    width: 90%; 
     opacity: 1; 
     color: white;
     display: flex;
@@ -69,7 +70,7 @@
     background-color: #F4F8FF !important;
 }
 .table-striped>tbody>tr:nth-child(odd)>td{
-    background-color: #ffffff !important;
+    background-color: #ffffff;
     opacity: 100;
 }
 
@@ -113,7 +114,7 @@
     display: flex;
     justify-content: space-between;
     font-family: "Noto Sans Bengali";
-    width: 80%;
+    width: 90%;
     align-items: center;
     margin: 0;
     padding: 0;
@@ -205,3 +206,30 @@ hr {
     right: 20px;
   }
   
+.gone{
+    background-color: #212529;
+    padding: 5.25px, 9.75px, 5.25px, 9.75px;
+    border-radius: 16px;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+}
+
+.upcoming{
+    background-color:  #FFC107;
+    padding: 5.25px, 9.75px, 5.25px, 9.75px;
+    border-radius: 16px;
+    color: #212529;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 15px;
+}
+
+
+.meeting-status{
+    align-items: center;
+    text-align: center !important; 
+    justify-content: space-around;
+}
