@@ -343,9 +343,8 @@ nav.sidebar .nav-link.active .feather {
   display: flex;
   justify-content: space-between;
   font-family: "Noto Sans Bengali";
-  width: 90%;
   margin: 0;
-  
+  width: 100%;
 }
 
 .activemeetingcontent .activemeetingtitle  h1{
@@ -358,8 +357,7 @@ nav.sidebar .nav-link.active .feather {
 
 /*==== active meeting table ====*/
 
-.activemeetingcontent .activemeetingtable{
-  width: 90%; 
+.activemeetingcontent .activemeetingtable{ 
   opacity: 1; 
   display: flex;
   justify-content: space-between;
@@ -368,6 +366,7 @@ nav.sidebar .nav-link.active .feather {
   border-radius: 8px;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .activemeetingcontent .activemeetingtable tbody{
@@ -477,10 +476,10 @@ nav.sidebar .nav-link.active .feather {
   display: flex;
   justify-content: space-between;
   font-family: "Noto Sans Bengali";
-  width: 90%;
   align-items: center;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .below-table p{
