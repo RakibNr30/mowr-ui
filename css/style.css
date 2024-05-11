@@ -248,18 +248,21 @@ nav.sidebar ul.nav-inner {
 /* ====================================== */
 main .content {
   background: #ffffff;
+  font-family: "Noto Sans Bengali";
 }
 main .content h1.page-title {
   font-size: 24px;
   font-weight: 600;
   color: #0D6EFD;
   text-align: center;
+  font-family: "Noto Sans Bengali";
 }
 main .content .form-card {
   background: #F4F8FF;
   border: 1px solid #9EC5FE;
   max-width: 1200px;
   margin: auto;
+  font-family: "Noto Sans Bengali";
 }
 main .content .form-card .form-title {
   font-size: 20px;
@@ -325,7 +328,12 @@ nav.sidebar .nav-link.active .feather {
   }
 }
 
-
+label{
+  color: #6C757D;
+}
+.card { 
+  margin-bottom: 20px !important;
+}
 /*==================================ACTVIE MEETING PAGE STARTS=================================*/
 .activemeetingcontent{
   display: flex;
@@ -511,6 +519,12 @@ nav.sidebar .nav-link.active .feather {
   color: #6C757D; 
 }
 
+hr {
+  border: 1px dashed #212529;
+  border-style: none none dashed; 
+  color: #fff; 
+  background-color: #fff;
+}
 
 /*
 hr {
