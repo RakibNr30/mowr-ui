@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Meeting Management</title>
+  <meta name="description" content="">
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="/css/vendor/bootstrap.min.css"/>
+  <link href="/css/style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="mowr">
+  <header class="navbar sticky-top flex-md-nowrap">
+    <a class="navbar-brand col-md-3 col-lg-2 me-0" href="#">
+      <img src="icon.svg" class="logo" alt="Logo"> Smart Meeting Management
+    </a>
+
+    <button class="navbar-toggler d-md-none collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span data-feather="menu"></span>
+    </button>
+
+    <div class="navbar-profile">
+      <img src="img/profile.png" class="photo" alt="Photo">
+      <div class="identity">
+        <span class="name">আব্দুল্লাহ ভুইয়া</span>
+        <span class="designation">এডমিনিস্ট্রেটিভ অফিসার</span>
+      </div>
+    </div>
+  </header>
+  <div class="container-fluid">
+    <div class="row">
+      <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block sidebar collapse">
+        <div class="position-sticky pt-md-3">
+
+          <div class="sidebar-profile mb-3">
+            <img src="img/profile.png" class="photo" alt="Photo">
+            <div class="identity">
+              <span class="name">আব্দুল্লাহ ভুইয়া</span>
+              <span class="designation">এডমিনিস্ট্রেটিভ অফিসার</span>
+            </div>
+          </div>
+
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">
+                <p>
+                  <span data-feather="user"></span> ইউজার ম্যানেজমেন্ট
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link button d-inline-flex align-items-center collapsed" data-bs-toggle="collapse"
+              aria-expanded="false" data-bs-target="#project-contents-collapse" aria-controls="project-contents-collapse">
+                <p>
+                  <span data-feather="box"></span> প্রোজেক্ট ম্যানেজমেন্ট
+                </p>
+              </a>
+              <ul class="nav-inner collapse" id="project-contents-collapse">
+                <li class="nav-item active"><a class="nav-link d-inline-flex align-items-center rounded" href="#">নতুন প্রজেক্ট যোগ</a></li>
+                <li class="nav-item"><a class="nav-link d-inline-flex align-items-center rounded" href="#">চলমান প্রজেক্ট লিস্ট</a></li>
+                <li class="nav-item"><a class="nav-link d-inline-flex align-items-center rounded" href="#">সম্পন্ন প্রজেক্ট লিস্ট</a></li>
+            </ul>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link button d-inline-flex align-items-center collapsed" data-bs-toggle="collapse"
+                 aria-expanded="false" data-bs-target="#contents-collapse" aria-controls="contents-collapse">
+                <p>
+                  <span data-feather="clipboard"></span> মিটিং ম্যানেজমেন্ট
+                </p>
+              </a>
+              <ul class="nav-inner collapse" id="contents-collapse">
+                <li class="nav-item"><a class="nav-link d-inline-flex align-items-center rounded" href="#">নতুন মিটিং
+                  তৈরি</a></li>
+                <li class="nav-item"><a class="nav-link d-inline-flex align-items-center rounded" href="#">একটিভ মিটিং
+                  লিস্ট</a></li>
+                <li class="nav-item"><a class="nav-link d-inline-flex align-items-center rounded" href="#">সম্পন্ন মিটিং
+                  লিস্ট</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <p><span data-feather="grid"></span> মাস্টার ডাটা ম্যানেজমেন্ট</p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <p><span data-feather="list"></span> অডিট ট্রেইল</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-4 mt-md-5">
+        <div class="content">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="page-title mb-3 mb-md-4">নতুন প্রজেক্ট তৈরি</h1>
+              <form>
+                <div class="card form-card">
+                  <div class="card-body">
+                    <h5 class="card-title form-title mb-3">প্রজেক্ট এর তথ্য</h5>
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <label for="project-name" class="form-label">প্রজেক্টের নাম</label>
+                        <input type="text" id="project-name" name="project-name" class="form-control" placeholder="প্রজেক্টের নাম লিখুন"
+                               required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="project-id" class="form-label">প্রজেক্ট আইডি</label>
+                        <input type="number" id="project-id" name="project-id" class="form-control" placeholder="প্রজেক্ট আইডি লিখুন"
+                               required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="project" class="form-label">স্ট্যাটাস</label>
+                        <select id="project" name="project" class="form-select" required>
+                          <option selected>স্ট্যাটাস নির্বাচন করুন</option>
+                          <option value="1">এপ্রুভালের জন্য অপেক্ষমাণ</option>
+                          <option value="2">চলতি</option>
+                          <option value="3">সম্পন্ন</option>
+                          <option value="4">বাতিলকৃত</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="section" class="form-label">সেকশন</label>
+                        <select id="section" name="section" class="form-select" required>
+                          <option selected>সেকশন নির্বাচন করুন</option>
+                          <option value="1">সেকশন ১</option>
+                          <option value="2">সেকশন ২</option>
+                          <option value="3">সেকশন ৩</option>
+                        </select>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="vpp-approve-date" class="form-label">ডিপিপি এপ্রুভাল তারিখ</label>
+                        <input onfocus="(this.type='date')" onblur="(this.type='text')"  id="vpp-approve-date" name="vpp-approve-date" class="form-control" placeholder="তারিখ নির্বাচন করুন"
+                               required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="duration" class="form-label">সময়সীমা<span style="color: red;"> *</span></label>
+                        <div class="row">
+                        <div class="col-md-6 mb-3">
+                        <input onfocus="(this.type='date')" onblur="(this.type='text')"  id="starting-date" name="starting-date" class="form-control" placeholder="শুরুর তারিখ নির্বাচন করুন"
+                               required></div>
+                        <div class="col-md-6 mb-3">
+                        <input onfocus="(this.type='date')" onblur="(this.type='text')"  id="ending-date" name="ending-date" class="form-control" placeholder="শেষের তারিখ নির্বাচন করুন"
+                              required></div>
+                            </div>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="vpp-revision-date" class="form-label">ডিপিপি অনুযায়ী সর্বশেষ রিভিশন ডেট</label>
+                        <input onfocus="(this.type='date')" onblur="(this.type='text')"  id="vpp-revision-date" name="vpp-revision-date" class="form-control" placeholder="তারিখ নির্বাচন করুন">
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="project-order" class="form-label">প্রজেক্টের অর্ডার<span style="color: red;"> *</span></label>
+                        <div class="input-group">
+                          <label for="project-order" class="input-group-text">ফাইল আপলোড</label>
+                          <label tabindex="0" class="form-control file-input-label" data-target="project-order">
+                            প্রজেক্টের অর্ডার সিলেক্ট করুন
+                            <input type="file" id="project-order" name="project-order" class="file-input d-none" accept=".pdf">
+                          </label>
+                        </div>
+                        <small class="input-note">সর্বোচ্চ ফাইল সাইজঃ ১৫ এম বি | ফাইলের ধরণঃ PDF</small>
+                      </div>
+                    </div>
+
+                    <hr class="col-12">
+
+                    <h5 class="card-title form-title mb-3">পিডি এর তথ্য</h5>
+                    <div class="row">
+                      <div class="col-md-6 mb-3">
+                        <label for="pd-name" class="form-label">নাম<span class="text-danger">*</span></label>
+                        <input type="text" id="pd-name" name="pd-name" class="form-control" placeholder="পিডি এর নাম লিখুন"
+                               required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="pd-joining-date" class="form-label">নিয়োগের তারিখ<span class="text-danger">*</span></label>
+                        <input onfocus="(this.type='date')" onblur="(this.type='text')"  id="pd-joining-date" name="pd-joining-date" class="form-control" placeholder="তারিখ নির্বাচন করুন"
+                               required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="pd-mobile" class="form-label">মোবাইল নম্বর<span class="text-danger">*</span></label>
+                        <input type="number" id="pd-mobile" name="pd-mobile" class="form-control" placeholder="পিডি এর মোবাইল নম্বর লিখুন"
+                               required>
+                      </div>
+                      <div class="col-md-6 mb-3">
+                        <label for="pd-email" class="form-label">ইমেইল আইডি<span class="text-danger">*</span></label>
+                        <input type="number" id="pd-email" name="pd-email" class="form-control" placeholder="পিডি এর ইমেইল আইডি লিখুন"
+                               required>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                <div class="row align-items-center mb-4">
+                <div class="hr-with-text">
+                  <hr>
+                  <span class="hr-text">প্রজেক্টের অগ্রগতী</span>
+                  <hr>
+              </div>
+            </div>
+
+              <div class="card form-card">
+                <div class="card-body">
+                  <h5 class="card-title form-title mb-3">বরাদ্দ</h5>
+                  <div class="row">
+                    <div class="col-md-4 mb-3">
+                      <label for="budget-unit" class="form-label">বাজেটের একক<span class="text-danger">*</span></label>
+                      <select id="budget-unit" name="budget-unit" class="form-select" required>
+                        <option selected>লক্ষ</option>
+                        <option value="1">কোটি</option>
+                      </select>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="allocated-budget" class="form-label">মোট বরাদ্দ<span class="text-danger">*</span></label>
+                      <div class="input-group">
+                        <label tabindex="0" class="form-control file-input-label" data-target="allocated-budget">
+                          মোট বরাদ্দ সংখ্যা লিখুন
+                          <input type="number" id="allocated-budget" name="allocated-budget" class="file-input d-none">
+                        </label>
+                        <label for="allocated-budget" class="input-group-text">লক্ষ</label>
+                      </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                      <label for="expenditure-budget" class="form-label">এখন পর্যন্ত খরচের পরিমাণ<span class="text-danger">*</span></label>
+                      <div class="input-group">
+                        <label tabindex="0" class="form-control file-input-label" data-target="expenditure-budget">
+                          এখন পর্যন্ত খরচের পরিমাণ লিখুন
+                          <input type="number" id="expenditure-budget" name="expenditure-budget" class="file-input d-none">
+                        </label>
+                        <label for="allocated-budget" class="input-group-text">লক্ষ</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card form-card">
+                <div class="card-body">
+                  <h5 class="card-title form-title mb-3">ডিপিপি অনুযায়ী পিএসসি (PSC) মিটিং</h5>
+                  <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="psc-meeting-number" class="form-label">মিটিং এর নম্বর<span class="text-danger">*</span></label>
+                    <input type="number" id="psc-meeting-number" name="psc-meeting-number" class="form-control" placeholder="পিএসসি (PSC) মিটিং এর নম্বর লিখুন"
+                           required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="done-psc-meeting-num" class="form-label">এখন পর্যন্ত হয়ে যাওয়া মিটিং এর নম্বর</label>
+                    <input type="number" id="done-psc-meeting-num" name="done-psc-meeting-num" class="form-control" placeholder="এখন পর্যন্ত হয়ে যাওয়া পিএসসি (PSC) মিটিং এর নম্বর লিখুন"
+                           required>
+                  </div>
+                  </div>
+                  <hr class="col-12 mb-4 mt-1">
+                  <h5 class="card-title form-title mb-3">ডিপিপি অনুযায়ী পিআইসি (PIC) মিটিং</h5>
+                  <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="pic-meeting-number" class="form-label">মিটিং এর নম্বর<span class="text-danger">*</span></label>
+                    <input type="number" id="pic-meeting-number" name="pic-meeting-number" class="form-control" placeholder="পিআইসি (PIC) মিটিং এর নম্বর লিখুন"
+                           required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="done-pic-meeting-num" class="form-label">এখন পর্যন্ত হয়ে যাওয়া মিটিং এর নম্বর</label>
+                    <input type="number" id="done-pic-meeting-num" name="done-pic-meeting-num" class="form-control" placeholder="এখন পর্যন্ত হয়ে যাওয়া পিআইসি (PIC) মিটিং এর নম্বর লিখুন"
+                           required>
+                  </div>
+                  </div>
+                  
+                
+
+
+                
+                </div>
+              </div>
+
+              <div class="card form-card">
+                <div class="card-body">
+                  <h5 class="card-title form-title mb-3">ফাইনানশিয়াল ও ফিজিকাল অগ্রগতী</h5>
+                  <div class="row">
+                    <div class="col-md-6 mb-3">
+                      <label for="financial-update" class="form-label">ফাইনানশিয়াল আপডেট</label>
+                      <input type="text" id="financial-update" name="financial-update" class="form-control" placeholder="ফাইনানশিয়াল আপডেট এর অগ্রগতী লিখুন">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                      <label for="physical-update" class="form-label">ফিজিকাল আপডেট</label>
+                      <input type="text" id="physical-update" name="physical-update" class="form-control" placeholder="ফিজিকাল আপডেট এর অগ্রগতী লিখুন ">
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+                <div class="row align-items-center mb-4">
+                    <div class="hr-with-text">
+                      <hr>
+                      <span class="hr-text">এপিএ এর আপডেট</span>
+                      <hr>
+                  </div>
+                </div>
+
+                <div class="card form-card">
+                    <div class="card-body">
+                        <h5 class="card-title form-title mb-3">এপিএ যোগ করুন</h5>
+                        <div class="row card form-card2">
+                            <div class="row">
+                                <h5 class="card-title form-title mb-3"></h5>
+                                <div class="col-md-8 mb-3">
+                                  <label for="apa-sub" class="form-label">এপিএ এর সাবজেক্ট</label>
+                                  <input type="text" id="apa-sub" name="apa-sub" class="form-control" placeholder="এপিএ এর সাবজেক্ট লিখুন">
+                                         
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                  <label for="budget-year" class="form-label">অর্থবছর</label>
+                                  <select id="budget-year" name="budget-year" class="form-select" required>
+                                    <option selected>অর্থবছর নির্বাচন করুন</option>
+                                    <option value="1">এপ্রুভালের জন্য অপেক্ষমাণ</option>
+                                    <option value="2">চলতি</option>
+                                    <option value="3">সম্পন্ন</option>
+                                    <option value="4">বাতিলকৃত</option>
+                                  </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4 mb-3">
+                                  <label for="psc-meeting-number" class="form-label">মিটিং এর নম্বর<span class="text-danger">*</span></label>
+                                  <input type="number" id="psc-meeting-number" name="psc-meeting-number" class="form-control" placeholder="পিএসসি (PSC) মিটিং এর নম্বর লিখুন"
+                                         required>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                  <label for="done-psc-meeting-num" class="form-label">এখন পর্যন্ত হয়ে যাওয়া মিটিং এর নম্বর</label>
+                                  <input type="number" id="done-psc-meeting-num" name="done-psc-meeting-num" class="form-control" placeholder="এখন পর্যন্ত হয়ে যাওয়া পিএসসি (PSC) মিটিং এর নম্বর লিখুন"
+                                         required>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <label for="psc-meeting-number" class="form-label">মিটিং এর নম্বর<span class="text-danger">*</span></label>
+                                    <input type="number" id="psc-meeting-number" name="psc-meeting-number" class="form-control" placeholder="পিএসসি (PSC) মিটিং এর নম্বর লিখুন"
+                                           required>
+                                  </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="card form-card mt-3 mb-5">
+                  <div class="card-body">
+                    <div class="row">
+                    <div class="col-md-6 mb-3 mb-md-0">
+                      <button type="button" class="btn btn-sm btn-secondary d-flex align-items-center"><span
+                        data-feather="plus" class="me-1"></span> এই প্রজেক্ট এর এপিএ পয়েন্ট যোগ করুন
+                      </button>
+                    </div>
+                    <div class="col-md-6">
+                      <button type="button" class="btn btn-sm btn-primary d-flex align-items-center float-md-end float-start">
+                        <span data-feather="save" class="me-1"></span> প্রজেক্ট তৈরী করুন
+                      </button>
+                      <button type="button" class="btn btn-sm btn-danger d-flex align-items-center float-md-end float-start me-2">
+                        <span data-feather="x" class="me-1"></span> খারিজ করুন
+                      </button>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+            
+              </form>
+            </div>
+          </div>
+        </div> 
+      </main>
+    </div>
+  </div>
+</div>
+
+<script src="/js/vendor/jquery.min.js"></script>
+<script src="/js/vendor/bootstrap.bundle.min.js"></script>
+<script src="/js/vendor/feather.min.js"></script>
+<script src="/js/app.js"></script>
+
+</body>
+</html>

@@ -264,6 +264,14 @@ main .content .form-card {
   margin: auto;
   font-family: "Noto Sans Bengali";
 }
+
+main .content .form-card2{
+  background: #E7F1FF;
+  max-width: 1200px;
+  margin: auto;
+  font-family: "Noto Sans Bengali";
+}
+
 main .content .form-card .form-title {
   font-size: 20px;
   font-weight: 600;
@@ -449,26 +457,7 @@ label{
 }
 
 
-.gone{
-  background-color: #6C757D;
-  padding: 5.25px, 9.75px, 5.25px, 9.75px;
-  border-radius: 16px;
-  font-family: "Inter", sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 15px;
-}
 
-.upcoming{
-  background-color:  #FFC107;
-  padding: 5.25px, 9.75px, 5.25px, 9.75px;
-  border-radius: 16px;
-  color: #212529 !important;
-  font-family: "Inter", sans-serif;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 15px;
-}
 
 
 .meeting-status{
@@ -590,7 +579,26 @@ hr {
 
 /*==================================ACTVIE PROJECT PAGE STARTS=================================*/
 
+.done{
+  background-color: #6C757D;
+  padding: 5.25px, 9.75px, 5.25px, 9.75px;
+  border-radius: 16px;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+}
 
+.upcoming{
+  background-color:  #FFC107;
+  padding: 5.25px, 9.75px, 5.25px, 9.75px;
+  border-radius: 16px;
+  color: #212529 !important;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+}
 .need-approval{
   background-color: #8540F5;
   padding: 5.25px, 9.75px, 5.25px, 9.75px;
@@ -616,6 +624,38 @@ hr {
   text-align: left;
   color: #6C757D;
 }
+
+table .thead{
+  border-bottom: 1px solid #6C757D;
+  padding: 8px 8px 9px 8px;
+  gap: 0px;
+  border: 0px 0px 1px 0px;
+  opacity: 0px;
+  background: #E9ECEF;
+}
+
+table{
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+}
+
+table a{
+  text-decoration: none;
+}
+
+table .tr:nth-child(even) .td{
+  background-color: #F4F8FF !important;
+}
+
+table .tr:nth-child(odd) .td{
+  background-color: #ffffff !important;
+}
+
+table th{
+  background-color: #E9ECEF !important;
+}
+
+
 
 /*==================================ACTVIE PROJECT PAGE ENDS=================================*/
 
