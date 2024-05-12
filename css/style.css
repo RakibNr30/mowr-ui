@@ -513,6 +513,7 @@ hr {
   border-style: none none dashed; 
   color: #fff; 
   background-color: #fff;
+  width: inherit;
 }
 
 /*
@@ -671,9 +672,7 @@ table th{
   line-height: 15px;
 }
 
-.board-section{
-  width: 177px;
-}
+
 
 
 
